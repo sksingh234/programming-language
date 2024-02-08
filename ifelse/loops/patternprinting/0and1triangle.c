@@ -4,22 +4,23 @@ int main()
     int n;
     printf("enter the value of rows:");
     scanf("%d", &n);
-    int a = 1;
+    int a;
     for (int i = 1; i <= n; i++)
     {
+        if (i % 2 == 0)
+            a = 0;
+        else
+            a = 1;
 
         for (int j = 1; j <= i; j++)
         {
-            if (j % 2 != 0)
+            printf("%d ", a);
+            if (a == 0)
             {
-                printf("%d ", a);
-                a = 0;
+                a =1;
             }
             else
-            {
-                printf("%d ", a);
-                a = 1;
-            }
+                a =0;
         }
         printf("\n");
     }
