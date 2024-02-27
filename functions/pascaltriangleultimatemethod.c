@@ -1,6 +1,6 @@
 #include <stdio.h>
 //
-// ncr+1 = ncr * n - r / r+1
+// ncr+1 = ncr *( n - r / r+1)
 int main()
 {
     int n;
@@ -16,7 +16,7 @@ int main()
         for (int j = 0; j <= i; j++)
         {
             printf("%d ", first);
-            first =  (first *  (i - j)) /  (j + 1);
+            first =  first *  (i - j) /  (j + 1);
         }
 
         printf("\n");

@@ -1,12 +1,13 @@
 #include <stdio.h>
 void name(){
     printf("sksingh\n");
-    return;
+    return ;
 }
-int main(){
-    for (int i = 1; i <=4; i++)
+int main (){
+    for (int i = 1; i <=5; i++)
     {
         name();
     }
-    
+   return 0; 
 }
+ 

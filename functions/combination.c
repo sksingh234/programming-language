@@ -8,6 +8,11 @@ int factorial(int x)
     }
     return fact;
 }
+int combination(int n, int r)
+{
+    int ncr = factorial(n) / (factorial(r) * factorial(n - r));
+    return ncr;
+}
 int main()
 {
     int n;
@@ -16,7 +21,7 @@ int main()
     int r;
     printf("enter the value of r:");
     scanf("%d", &r);
-    int ncr = factorial(n) / (factorial(r) * factorial(n - r));
+    int ncr = combination(n, r);
     printf("%d", ncr);
     return 0;
 }
