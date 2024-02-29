@@ -11,5 +11,6 @@ int main()
     printf("%p\n", &x);
     printf("%p\n", &a);
     printf("%p\n", y);
+    printf("%p\n", x);
     return 0;
 }

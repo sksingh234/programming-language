@@ -1,4 +1,4 @@
- #include <stdio.h>
+#include <stdio.h>
 int factorial(int x)
 {
     int fact = 1;
@@ -8,6 +8,11 @@ int factorial(int x)
     }
     return fact;
 }
+int permutation(int n, int r)
+{
+    int pcr = factorial(n) / factorial(n - r);
+    return pcr;
+}
 int main()
 {
     int n;
@@ -16,7 +21,7 @@ int main()
     int r;
     printf("enter the value of r:");
     scanf("%d", &r);
-    int pcr = factorial(n) / factorial(n - r);
+    int pcr =  permutation(n, r);
     printf("%d", pcr);
     return 0;
 }
